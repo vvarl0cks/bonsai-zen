@@ -1,73 +1,56 @@
-# Welcome to your Lovable project
+# 🌿 Bonsai Zen
 
-## Project info
+A serene Web3 gamified bonsai tree growing game on Ethereum Sepolia testnet. Mint free random rarity seed NFTs (ERC-1155), nurture daily with water and vitamins, and harvest into beautiful bonsai NFTs.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Features
 
-## How can I edit this code?
+- **Mint Seeds**: Get random rarity seed NFTs for free (Common, Uncommon, Rare, Epic, Legendary)
+- **20 Real Bonsai Species**: Ficus, Juniper, Japanese Maple, Pine, Azalea, and more
+- **Daily Nurturing**: Water (+5%) and Vitamin (+10%) actions with 24h cooldowns
+- **Procedural Canvas Art**: Unique recursive tree drawings that grow with progress
+- **Harvest NFTs**: Transform fully grown seeds into permanent Bonsai NFTs
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend**: React + TypeScript + Vite + Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Web3**: RainbowKit + wagmi + viem
+- **Animations**: Framer Motion
+- **Chain**: Ethereum Sepolia Testnet
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Smart Contract
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Network**: Ethereum Sepolia
+- **Contract**: `0xd91917fc778C7C22859B4C9acC9B5cc29DB61776`
+- **Explorer**: [View on Etherscan](https://sepolia.etherscan.io/address/0xd91917fc778c7c22859b4c9acc9b5cc29db61776)
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Getting Started
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+# Install dependencies
+npm install
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## How to Play
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Connect Wallet**: Use any Web3 wallet (MetaMask, etc.) on Sepolia network
+2. **Mint a Seed**: Click "Surprise Me" to randomize, then mint your seed NFT
+3. **Nurture Daily**: Water and feed vitamins to grow your tree (progress stored locally)
+4. **Harvest**: Once at 100%, harvest to convert your seed into a Bonsai NFT
 
-**Use GitHub Codespaces**
+## Rarity System
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+| Rarity | Weight | Multiplier |
+|--------|--------|------------|
+| Common | 70% | 1.0x |
+| Uncommon | 20% | 1.0x |
+| Rare | 7% | 1.0x |
+| Epic | 2% | 1.0x |
+| Legendary | 1% | 1.0x |
 
-## What technologies are used for this project?
+## License
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+MIT
