@@ -211,7 +211,7 @@ const Home = () => {
 
         {/* Footer */}
         <footer className="text-center py-8 text-sm text-muted-foreground">
-          <p>Built with 🌿 on Base Sepolia</p>
+          <p>Built with 🌿 on Ethereum Sepolia</p>
         </footer>
       </div>
     </div>
