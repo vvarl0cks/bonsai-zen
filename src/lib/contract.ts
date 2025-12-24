@@ -1,4 +1,4 @@
-export const CONTRACT_ADDRESS = '0x0000000000000000000000000000000000000000' as const;
+export const CONTRACT_ADDRESS = '0xd91917fc778C7C22859B4C9acC9B5cc29DB61776' as const;
 
 export const ABI = [
   // ERC1155 standard
