@@ -2,9 +2,9 @@ import { http, createConfig } from 'wagmi';
 import { defineChain } from 'viem';
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 
-export const baseSepolia = defineChain({
-  id: 84532,
-  name: 'Base Sepolia',
+export const sepolia = defineChain({
+  id: 11155111,
+  name: 'Sepolia',
   nativeCurrency: {
     name: 'Ether',
     symbol: 'ETH',
@@ -12,13 +12,13 @@ export const baseSepolia = defineChain({
   },
   rpcUrls: {
     default: {
-      http: ['https://sepolia.base.org'],
+      http: ['https://eth-sepolia.public.blastapi.io'],
     },
   },
   blockExplorers: {
     default: {
-      name: 'Basescan',
-      url: 'https://sepolia.basescan.org',
+      name: 'Etherscan',
+      url: 'https://sepolia.etherscan.io',
     },
   },
   testnet: true,
@@ -27,9 +27,9 @@ export const baseSepolia = defineChain({
 export const config = getDefaultConfig({
   appName: 'Bonsai Zen',
   projectId: 'bonsai-zen-demo', // Replace with your WalletConnect project ID
-  chains: [baseSepolia],
+  chains: [sepolia],
   transports: {
-    [baseSepolia.id]: http('https://sepolia.base.org'),
+    [sepolia.id]: http('https://eth-sepolia.public.blastapi.io'),
   },
 });
 
