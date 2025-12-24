@@ -168,7 +168,9 @@ const Dashboard = () => {
           <p className="text-muted-foreground">
             Please connect your wallet to access your zen garden
           </p>
-          <ConnectButton />
+          <div className="flex justify-center">
+            <ConnectButton />
+          </div>
         </motion.div>
       </div>
     );
